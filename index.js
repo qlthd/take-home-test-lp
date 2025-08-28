@@ -13,7 +13,9 @@ const pharmacy = new Pharmacy(drugs);
 const log = [];
 
 for (let elapsedDays = 0; elapsedDays < 30; elapsedDays++) {
-  log.push(JSON.parse(JSON.stringify(pharmacy.updateBenefitValue())));
+  log.push(
+    JSON.parse(JSON.stringify(pharmacy.updateBenefitAndExpiresInValues())),
+  );
 }
 
 /* eslint-disable no-console */

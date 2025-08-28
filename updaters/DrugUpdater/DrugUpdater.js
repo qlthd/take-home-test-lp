@@ -8,6 +8,7 @@ export class DrugUpdater {
     this.decrementExpiresIn();
     this.handleExpiration();
     this.handleBenefitsBounds();
+    return this.drug;
   }
 
   updateBenefit() {
